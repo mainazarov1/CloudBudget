@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mainazarov1/CloudBudget/issues"
   },
-  "homepage": "https://github.com/mainazarov1/CloudBudget#readme"
+  "homepage": "https://github.com/mainazarov1/CloudBudget#readme",
+  "dependencies": {
+    "sass": "^1.47.0"
+  }
 }

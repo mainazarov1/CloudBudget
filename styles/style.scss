@@ -1,0 +1,240 @@
+$red-color: #ed4c5c;
+$black-color: #101010;
+$grey-color: #fafafa;
+$white-color: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font: 400 1rem/1.2 "Lato", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+section:not(:first-child) {
+  padding: 100px 0;
+}
+.button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  // background: $red-color;
+  color: #fff;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    font-size: 0.9rem;
+  }
+  &__logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+  &__link {
+    color: #fff;
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+    img:first-child {
+      margin-right: 12px;
+    }
+    span {
+      margin-right: 12px;
+    }
+  }
+  &__login {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #fff;
+  }
+}
+.main {
+}
+.hero {
+  position: relative;
+  background: url(../assets/img/hero-bg.png) no-repeat;
+  height: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(238, 61, 27, 0.8) 100%
+    );
+  }
+  &__wrap {
+    padding: 240px 0 180px;
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $white-color;
+  }
+  .heading {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  .description {
+    width: 49%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+  }
+  &__button {
+    background: $white-color;
+    color: $red-color;
+  }
+}
+.video {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 33%;
+  }
+  .title {
+    margin-top: 45px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .more {
+  }
+  &__frame {
+    position: relative;
+    width: 50%;
+    img {
+      width: 85%;
+    }
+    a {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.features {
+	background: $grey-color;
+  .title {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 63px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__content {
+    position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		padding: 30px;
+		background-color: $white-color;
+		border-radius: 8px;
+		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    .title {
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+			margin-bottom: 20px;
+    }
+		.description {
+			font-family: Lato;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			letter-spacing: 0em;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+  }
+  .more {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+}
