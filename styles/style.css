@@ -230,4 +230,46 @@ section:not(:first-child) {
   text-align: center;
 }
 
+.technology .title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.technology__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.technology__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+}
+.technology__item:not(:last-child) {
+  margin-right: 30px;
+}
+.technology__item span {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(16, 16, 16, 0.08);
+  font-family: Lato;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
